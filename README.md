@@ -2,7 +2,7 @@
 
 To use this repository:
 ```shell
-git clone 
+git clone https://github.com/EnergySystemAnalysis-ETH/ESAurban-SpineOpt.git
 cd ESAurban-SpineOpt
 # Julia project environment
 julia --project=@.
