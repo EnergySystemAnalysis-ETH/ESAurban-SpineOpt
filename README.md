@@ -17,7 +17,7 @@ conda activate spine-tools
 
 In OS terminal:
 ```shell
-conda create -n spine-tools python  
+conda create -n spine-tools python
 conda activate spine-tools
 python -m pip install spinetoolbox==0.x.y
 ```
