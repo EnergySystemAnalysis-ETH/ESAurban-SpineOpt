@@ -1,0 +1,481 @@
+{
+    "project": {
+        "version": 13,
+        "description": "",
+        "settings": {
+            "enable_execute_all": false,
+            "store_external_paths_as_relative": true
+        },
+        "specifications": {},
+        "connections": [
+            {
+                "name": "from Load template to ConfigOutput",
+                "from": [
+                    "Load template",
+                    "right"
+                ],
+                "to": [
+                    "ConfigOutput",
+                    "left"
+                ],
+                "filter_settings": {
+                    "auto_online": true,
+                    "enabled_filter_types": {
+                        "alternative_filter": false,
+                        "scenario_filter": true
+                    }
+                }
+            },
+            {
+                "name": "from InputSpineOpt to Run SpineOpt",
+                "from": [
+                    "InputSpineOpt",
+                    "bottom"
+                ],
+                "to": [
+                    "Run SpineOpt",
+                    "left"
+                ],
+                "filter_settings": {
+                    "auto_online": true,
+                    "enabled_filter_types": {
+                        "alternative_filter": false,
+                        "scenario_filter": true
+                    }
+                }
+            },
+            {
+                "name": "from Load template to ConfigSystem",
+                "from": [
+                    "Load template",
+                    "right"
+                ],
+                "to": [
+                    "ConfigSystem",
+                    "left"
+                ],
+                "filter_settings": {
+                    "auto_online": true,
+                    "enabled_filter_types": {
+                        "alternative_filter": false,
+                        "scenario_filter": true
+                    }
+                }
+            },
+            {
+                "name": "from Load template to ConfigSimulationModel",
+                "from": [
+                    "Load template",
+                    "right"
+                ],
+                "to": [
+                    "ConfigSimulationModel",
+                    "left"
+                ],
+                "filter_settings": {
+                    "auto_online": true,
+                    "enabled_filter_types": {
+                        "alternative_filter": false,
+                        "scenario_filter": true
+                    }
+                }
+            },
+            {
+                "name": "from Load template to ConfigSimulationTemprStochStr",
+                "from": [
+                    "Load template",
+                    "right"
+                ],
+                "to": [
+                    "ConfigSimulationTemprStochStr",
+                    "left"
+                ],
+                "filter_settings": {
+                    "auto_online": true,
+                    "enabled_filter_types": {
+                        "alternative_filter": false,
+                        "scenario_filter": true
+                    }
+                }
+            },
+            {
+                "name": "from ConfigSystem to MergerMain",
+                "from": [
+                    "ConfigSystem",
+                    "right"
+                ],
+                "to": [
+                    "MergerMain",
+                    "left"
+                ],
+                "filter_settings": {
+                    "auto_online": true,
+                    "enabled_filter_types": {
+                        "alternative_filter": false,
+                        "scenario_filter": true
+                    }
+                }
+            },
+            {
+                "name": "from Run SpineOpt to OutputDB",
+                "from": [
+                    "Run SpineOpt",
+                    "right"
+                ],
+                "to": [
+                    "OutputDB",
+                    "left"
+                ],
+                "options": {
+                    "purge_before_writing": true,
+                    "purge_settings": {
+                        "alternative": true,
+                        "scenario": true,
+                        "scenario_alternative": true,
+                        "entity_class": true,
+                        "display_mode": true,
+                        "entity_class_display_mode": true,
+                        "superclass_subclass": true,
+                        "entity": true,
+                        "entity_group": true,
+                        "entity_alternative": true,
+                        "parameter_value_list": true,
+                        "list_value": true,
+                        "parameter_type": true,
+                        "parameter_group": true,
+                        "parameter_definition": true,
+                        "parameter_value": true,
+                        "metadata": true,
+                        "entity_metadata": true,
+                        "parameter_value_metadata": true,
+                        "entity_location": true
+                    }
+                },
+                "filter_settings": {
+                    "auto_online": true,
+                    "enabled_filter_types": {
+                        "alternative_filter": false,
+                        "scenario_filter": true
+                    }
+                }
+            },
+            {
+                "name": "from MergerMain to InputSpineOpt",
+                "from": [
+                    "MergerMain",
+                    "right"
+                ],
+                "to": [
+                    "InputSpineOpt",
+                    "left"
+                ],
+                "options": {
+                    "purge_before_writing": true,
+                    "purge_settings": {
+                        "alternative": true,
+                        "scenario": true,
+                        "scenario_alternative": true,
+                        "entity_class": true,
+                        "display_mode": true,
+                        "entity_class_display_mode": true,
+                        "superclass_subclass": true,
+                        "entity": true,
+                        "entity_group": true,
+                        "entity_alternative": true,
+                        "parameter_value_list": true,
+                        "list_value": true,
+                        "parameter_type": true,
+                        "parameter_group": true,
+                        "parameter_definition": true,
+                        "parameter_value": true,
+                        "metadata": true,
+                        "entity_metadata": true,
+                        "parameter_value_metadata": true,
+                        "entity_location": true
+                    }
+                },
+                "filter_settings": {
+                    "auto_online": true,
+                    "enabled_filter_types": {
+                        "alternative_filter": false,
+                        "scenario_filter": true
+                    }
+                }
+            },
+            {
+                "name": "from MergerExtra to InputSpineOpt",
+                "from": [
+                    "MergerExtra",
+                    "bottom"
+                ],
+                "to": [
+                    "InputSpineOpt",
+                    "left"
+                ],
+                "filter_settings": {
+                    "auto_online": true,
+                    "enabled_filter_types": {
+                        "alternative_filter": false,
+                        "scenario_filter": true
+                    }
+                }
+            },
+            {
+                "name": "from ConfigExtra to MergerExtra",
+                "from": [
+                    "ConfigExtra",
+                    "bottom"
+                ],
+                "to": [
+                    "MergerExtra",
+                    "left"
+                ],
+                "filter_settings": {
+                    "auto_online": true,
+                    "enabled_filter_types": {
+                        "alternative_filter": false,
+                        "scenario_filter": true
+                    }
+                }
+            },
+            {
+                "name": "from ConfigSimulationModel to MergerMain",
+                "from": [
+                    "ConfigSimulationModel",
+                    "right"
+                ],
+                "to": [
+                    "MergerMain",
+                    "left"
+                ],
+                "filter_settings": {
+                    "auto_online": true,
+                    "enabled_filter_types": {
+                        "alternative_filter": false,
+                        "scenario_filter": true
+                    }
+                }
+            },
+            {
+                "name": "from ConfigOutput to MergerMain",
+                "from": [
+                    "ConfigOutput",
+                    "right"
+                ],
+                "to": [
+                    "MergerMain",
+                    "left"
+                ],
+                "filter_settings": {
+                    "auto_online": true,
+                    "enabled_filter_types": {
+                        "alternative_filter": false,
+                        "scenario_filter": true
+                    }
+                }
+            },
+            {
+                "name": "from ConfigSimulationTemprStochStr to MergerMain",
+                "from": [
+                    "ConfigSimulationTemprStochStr",
+                    "right"
+                ],
+                "to": [
+                    "MergerMain",
+                    "left"
+                ],
+                "filter_settings": {
+                    "auto_online": true,
+                    "enabled_filter_types": {
+                        "alternative_filter": false,
+                        "scenario_filter": true
+                    }
+                }
+            }
+        ],
+        "jumps": []
+    },
+    "items": {
+        "InputSpineOpt": {
+            "type": "Data Store",
+            "description": "",
+            "x": 105.56361246639675,
+            "y": -82.41517980893954,
+            "url": {
+                "dialect": "sqlite",
+                "host": "",
+                "port": null,
+                "database": {
+                    "type": "path",
+                    "relative": true,
+                    "path": "SpineOptModels/Tutorial/InputSpineOpt.sqlite"
+                },
+                "schema": ""
+            }
+        },
+        "Load template": {
+            "type": "Tool",
+            "description": "",
+            "x": -589.1382046878283,
+            "y": -83.12428814347906,
+            "specification": "Load template",
+            "execute_in_work": false,
+            "cmd_line_args": [
+                {
+                    "type": "resource",
+                    "arg": "db_url@ConfigOutput"
+                },
+                {
+                    "type": "resource",
+                    "arg": "db_url@ConfigSystem"
+                },
+                {
+                    "type": "resource",
+                    "arg": "db_url@ConfigSimulationModel"
+                },
+                {
+                    "type": "resource",
+                    "arg": "db_url@ConfigSimulationTemprStochStr"
+                }
+            ],
+            "kill_completed_processes": false,
+            "log_process_output": false
+        },
+        "OutputDB": {
+            "type": "Data Store",
+            "description": "",
+            "x": 444.8561503410994,
+            "y": 51.85906546306125,
+            "url": {
+                "dialect": "sqlite",
+                "host": "",
+                "port": null,
+                "database": {
+                    "type": "path",
+                    "relative": true,
+                    "path": "OutputDB/Tutorial/OutputDB.sqlite"
+                },
+                "schema": ""
+            }
+        },
+        "Run SpineOpt": {
+            "type": "Tool",
+            "description": "",
+            "x": 282.5760523382578,
+            "y": 51.9806866866342,
+            "specification": "Run SpineOpt",
+            "execute_in_work": false,
+            "cmd_line_args": [
+                {
+                    "type": "resource",
+                    "arg": "db_url@InputSpineOpt"
+                },
+                {
+                    "type": "resource",
+                    "arg": "db_url@OutputDB"
+                }
+            ],
+            "kill_completed_processes": false,
+            "log_process_output": false
+        },
+        "ConfigOutput": {
+            "type": "Data Store",
+            "description": "",
+            "x": -281.88517759618486,
+            "y": 33.98363330943936,
+            "url": {
+                "dialect": "sqlite",
+                "host": "",
+                "port": null,
+                "database": {
+                    "type": "path",
+                    "relative": true,
+                    "path": "SpineOptInputConfigs/OutputDefaultReport.sqlite"
+                },
+                "schema": ""
+            }
+        },
+        "ConfigSystem": {
+            "type": "Data Store",
+            "description": "",
+            "x": -277.2608958128343,
+            "y": -210.70400395380267,
+            "url": {
+                "dialect": "sqlite",
+                "host": "",
+                "port": null,
+                "database": {
+                    "type": "path",
+                    "relative": true,
+                    "path": "SpineOptInputConfigs/System-FullTech.sqlite"
+                },
+                "schema": ""
+            }
+        },
+        "ConfigSimulationModel": {
+            "type": "Data Store",
+            "description": "",
+            "x": -279.1590808896048,
+            "y": -82.90665725159386,
+            "url": {
+                "dialect": "sqlite",
+                "host": "",
+                "port": null,
+                "database": {
+                    "type": "path",
+                    "relative": true,
+                    "path": "SpineOptInputConfigs/SimlModel-Elastic-Scenario-Horizon-EconRep-Other.sqlite"
+                },
+                "schema": ""
+            }
+        },
+        "ConfigSimulationTemprStochStr": {
+            "type": "Data Store",
+            "description": "",
+            "x": -274.3554776197252,
+            "y": 178.86234512799672,
+            "url": {
+                "dialect": "sqlite",
+                "host": "",
+                "port": null,
+                "database": {
+                    "type": "path",
+                    "relative": true,
+                    "path": "SpineOptInputConfigs/SimlTmprStochStr-Inv1Yr-4Ms1hrGrpTb-StorCyc.sqlite"
+                },
+                "schema": ""
+            }
+        },
+        "ConfigExtra": {
+            "type": "Data Store",
+            "description": "",
+            "x": -100.47598659754078,
+            "y": -329.97182009797916,
+            "url": {
+                "dialect": "sqlite",
+                "host": "",
+                "port": null,
+                "database": {
+                    "type": "path",
+                    "relative": true,
+                    "path": "SpineOptInputConfigs/Extra-DemandElastic.sqlite"
+                },
+                "schema": ""
+            }
+        },
+        "MergerMain": {
+            "type": "Merger",
+            "description": "",
+            "x": -59.65533506445294,
+            "y": -79.99923183779848,
+            "cancel_on_error": false
+        },
+        "MergerExtra": {
+            "type": "Merger",
+            "description": "",
+            "x": 45.52651433673811,
+            "y": -239.7729755068207,
+            "cancel_on_error": false
+        }
+    }
+}
