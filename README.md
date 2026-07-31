@@ -1,6 +1,8 @@
 # Building Archetypcal Urban Energy Model
 
-To use this repository:
+## 1. Usage
+
+To use this repository (once done the environment setup in the following section `2. Spine environment configuration`):
 ```shell
 git clone https://github.com/EnergySystemAnalysis-ETH/ESAurban-SpineOpt.git
 cd ESAurban-SpineOpt
@@ -11,7 +13,7 @@ conda activate spine-tools
 (spine-tools) > spinetoolbox
 ```
 
-## Spine environment configuration
+## 2. Spine environment configuration
 
 ### I. spinetoolbox related `Python` packages
 

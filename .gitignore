@@ -15,4 +15,5 @@ logs/
 data/
 *.zip
 
-exercise*.*
+*exercise*.*
+*tutorial*.*
