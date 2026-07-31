@@ -381,8 +381,8 @@
         "ConfigOutput": {
             "type": "Data Store",
             "description": "",
-            "x": -281.88517759618486,
-            "y": 33.98363330943936,
+            "x": -281.8851775961848,
+            "y": 150.05208242484088,
             "url": {
                 "dialect": "sqlite",
                 "host": "",
@@ -432,8 +432,8 @@
         "ConfigSimulationTemprStochStr": {
             "type": "Data Store",
             "description": "",
-            "x": -274.3554776197252,
-            "y": 178.86234512799672,
+            "x": -279.40193192909044,
+            "y": 45.63595136075324,
             "url": {
                 "dialect": "sqlite",
                 "host": "",

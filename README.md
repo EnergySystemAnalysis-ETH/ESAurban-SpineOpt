@@ -6,11 +6,13 @@ To use this repository (once done the environment setup in the following section
 ```shell
 git clone https://github.com/EnergySystemAnalysis-ETH/ESAurban-SpineOpt.git
 cd ESAurban-SpineOpt
-# Julia project environment
-julia --project=@.
-# Conda python virtual env (only when using spinetoolbox)
+
+# Conda python virtual env (only needed when using `spinetoolbox`)
 conda activate spine-tools
 (spine-tools) > spinetoolbox
+
+# Julia project environment
+julia --project=@.
 ```
 
 ## 2. Spine environment configuration
@@ -25,7 +27,7 @@ python -m pip install spinetoolbox==0.x.y
 ```
 > Note: replace the `python` by `python=3.1x` for a specific version
 
-### II. `Julia` packages
+### II-a. `Julia` packages
 
 1. Activate `Julia` project environment **in OS terminal**
 
@@ -47,7 +49,7 @@ python -m pip install spinetoolbox==0.x.y
 	using Pkg; Pkg.build("IJulia")
 	```
 
-### III. Config python interpreter for `PyCall.jl`
+### II-b. Config python interpreter for `PyCall.jl`
 
 1. In OS terminal	
 	
