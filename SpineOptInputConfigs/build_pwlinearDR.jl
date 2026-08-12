@@ -16,7 +16,7 @@ using Dates
 begin_time = now()
 
 # initialize database
-db_name = "Extra-DemandElastic"
+db_name = "AddOn-DemandElastic"
 db_path = joinpath(dirname(pwd()), "database\\$db_name.sqlite")
 
 db_url = "sqlite:///$db_path"
