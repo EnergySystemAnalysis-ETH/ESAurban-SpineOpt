@@ -55,7 +55,7 @@ DR_ref_price_node_obj_val = [
 ]
 DR_entities_obj_alt = [
     map(item -> [item..., DR_alternative, true], DR_entities_obj)...,
-    map(item -> [item..., "Basic", false], DR_entities_obj)...,
+    map(item -> [item..., "Base", false], DR_entities_obj)...,
 ]
 DR_pwl_entities_rel = map(item -> 
     ["unit__node__node", [item[2], ref_price_node_name, item[1]]], 
@@ -63,13 +63,13 @@ DR_pwl_entities_rel = map(item ->
 )
 
 data_pwl_DR = Dict(
-    :alternatives => [DR_alternative, "Basic"],
+    :alternatives => [DR_alternative, "Base"],
     :objects => DR_entities_obj,
     :object_parameter_values => DR_ref_price_node_obj_val,
     :entity_alternatives => DR_entities_obj_alt,
     :relationships => DR_pwl_entities_rel,
 )
-import_data(db_url, data_pwl_DR, "Basic pwl DR setup"; upgrade=true)
+import_data(db_url, data_pwl_DR, "pwl DR setup"; upgrade=true)
 
 
 # Setup for downward DR

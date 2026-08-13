@@ -341,7 +341,7 @@
                 "database": {
                     "type": "path",
                     "relative": true,
-                    "path": "SpineOptInputConfigs/System-MGA.-invest.sqlite"
+                    "path": "SpineOptInputConfigs/System-MGA-invest.sqlite"
                 },
                 "schema": ""
             }
