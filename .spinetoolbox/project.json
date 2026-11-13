@@ -245,8 +245,8 @@
         "InputSpineOpt": {
             "type": "Data Store",
             "description": "",
-            "x": 132.73469582467806,
-            "y": -80.40841584997732,
+            "x": 134.2447133692618,
+            "y": -80.40841584997733,
             "url": {
                 "dialect": "sqlite",
                 "host": "",
@@ -254,7 +254,7 @@
                 "database": {
                     "type": "path",
                     "relative": true,
-                    "path": "SpineOptModels/RPM-MGA/Input_MGA.sqlite"
+                    "path": "SpineOpt-InputDBs/RPM-MGA/Input_MGA.sqlite"
                 },
                 "schema": ""
             }
@@ -287,7 +287,7 @@
                 "database": {
                     "type": "path",
                     "relative": true,
-                    "path": "OutputDB/Tutorial/OutputDB.sqlite"
+                    "path": "SpineOpt-Outputs/Tutorial/OutputDB.sqlite"
                 },
                 "schema": ""
             }
@@ -324,7 +324,7 @@
                 "database": {
                     "type": "path",
                     "relative": true,
-                    "path": "SpineOptInputConfigs/Output-MGA.sqlite"
+                    "path": "SpineOpt-InputConfigs/Output-MGA.sqlite"
                 },
                 "schema": ""
             }
@@ -341,7 +341,7 @@
                 "database": {
                     "type": "path",
                     "relative": true,
-                    "path": "SpineOptInputConfigs/System-MGA-invest.sqlite"
+                    "path": "SpineOpt-InputConfigs/System-MGA-invest.sqlite"
                 },
                 "schema": ""
             }
@@ -350,7 +350,7 @@
             "type": "Data Store",
             "description": "",
             "x": -279.1590808896048,
-            "y": -82.90665725159386,
+            "y": -84.41667479617762,
             "url": {
                 "dialect": "sqlite",
                 "host": "",
@@ -358,7 +358,7 @@
                 "database": {
                     "type": "path",
                     "relative": true,
-                    "path": "SpineOptInputConfigs/SimlModel-MGA-Horizon-EconRep-Other.sqlite"
+                    "path": "SpineOpt-InputConfigs/SimlModel-MGA-Horizon-EconRep-Other.sqlite"
                 },
                 "schema": ""
             }
@@ -375,7 +375,7 @@
                 "database": {
                     "type": "path",
                     "relative": true,
-                    "path": "SpineOptInputConfigs/SimlTmprStochStr-Inv1Yr-4Ms1hrGrpTb-StorCyc.sqlite"
+                    "path": "SpineOpt-InputConfigs/SimlTmprStochStr-Inv1Yr-4Ms1hrGrpTb-StorCyc.sqlite"
                 },
                 "schema": ""
             }
@@ -406,7 +406,7 @@
                 "database": {
                     "type": "path",
                     "relative": true,
-                    "path": "SpineOptInputConfigs/AddOn-MGA.sqlite"
+                    "path": "SpineOpt-InputConfigs/AddOn-MGA.sqlite"
                 },
                 "schema": ""
             }

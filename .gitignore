@@ -1,23 +1,23 @@
 .claude/
 .vscode/
 .spinetoolbox/local/
-OutputDB/EulerOutput/
-archive/
-WTP_archetypal_municipalities/
-
 Manifest.toml
-*.ini
 
 logs/
+archive/
+data/
+
+Tutorial/
+WTP_archetypal_municipalities/
+
+*.ini
 *.log
 *.bak*
-
-data/
 *.zip
-
 *exercise*.*
 *tutorial*.*
 
-Tutorial/
+*Euler*/
+*Demo*/
 *test*
 *demo*
